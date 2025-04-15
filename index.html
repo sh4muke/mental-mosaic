@@ -1,77 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mental Mosaic</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #fffaf4;
-      color: #333;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .container {
-      width: 90%;
-      max-width: 960px;
-      background-color: #fff;
-      padding: 2em;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5em;
-      color: #7a5c3b;
-      margin-bottom: 0.2em;
-    }
-    .tagline {
-      font-size: 1.2em;
-      color: #665e57;
-      font-style: italic;
-      margin-bottom: 1.5em;
-    }
-    p {
-      font-size: 1.05em;
-      line-height: 1.6;
-      color: #444;
-      margin: 1em 0;
-    }
-    img {
-      margin-top: 1.5em;
-      width: 100%;
-      max-width: 720px;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-    }
-    footer {
-      margin-top: 1.8em;
-      font-size: 0.9em;
-      color: #9b856d;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source of Thoughts...</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #333;
+            color: #f4e3cf;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #f0a500;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #ddd;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .quote {
+            font-size: 1.3em;
+            color: #f0a500;
+            margin: 2rem 0;
+            font-style: italic;
+        }
+
+        .journal, .subscribe {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #444;
+            border-radius: 10px;
+            border: 1px solid #888;
+            font-size: 1rem;
+            color: #ddd;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .subscribe {
+            background-color: #f0a500;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="email"] {
+            padding: 0.8rem;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            padding: 0.8rem 1.2rem;
+            margin-top: 1rem;
+            background-color: #333;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            color: #fff;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-size: 0.9em;
+            color: #ddd;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .quote {
+                font-size: 1.1em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Mental Mosaic</h1>
-    <div class="tagline">Crafting clarity, piece by piece.</div>
 
-    <p>Just like a mosaic is formed from unique fragments creating a meaningful whole, your thoughts are pieces of your deeper self.</p>
-    <p>Mental Mosaic is a place to reflect, restore, and rebuild your inner world. With inspiration and mindfulness, we help you discover patterns in your thoughts that bring peace and clarity.</p>
-    <p>Join us — and start putting your mental pieces into something beautiful.</p>
+    <h1>Source of Thoughts...</h1>
+    <p>Every action you take, every emotion you feel, and every result you get starts with a single thought. By understanding the source of our thoughts, we unlock the path to clarity.</p>
+    <p>Our purpose is to help you reflect on your thoughts, guiding you to mental clarity, peace, and purpose.</p>
 
-    <img src="https://images.unsplash.com/photo-1563260054-876a057f5c14?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Mosaic artwork">
+    <div class="quote">
+        "Your thoughts are the foundation of your reality. Choose them wisely."
+    </div>
 
-    <footer>&copy; 2024 Mental Mosaic. All rights reserved.</footer>
-  </div>
-</body>
-</html>
+    <textarea class="journal" placeholder="Submit your thoughts anonymously..."></textarea>
+    <br>
+    <button onclick="submitJournal()">Submit</button>
+
+    <div class="subscribe">
+        <p>Want to receive reflection prompts and inspiration?</p>
+        <input type="email" placeholder="Enter your email" id="email" />
+        <button onclick="subscribe()">Subscribe</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mental Mosaic. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function submitJournal() {
+            const journal = document.querySelector('.journal').value;
+            if (journal) {
+                alert("Your journal has been submitted anonymously!");
+                document.querySelector('.journal').value = ''; // Clear textarea
+            } else {
+                alert("Please write something before submitting.");
+            }
+        }
+
+        function subscribe() {
+            const email = document.querySelector('#email').
+
