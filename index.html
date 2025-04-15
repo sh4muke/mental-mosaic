@@ -1,134 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Mosaic</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4e3cf; /* Light beige background */
-            color: #333;
-            line-height: 1.7; /* Increased line height for better readability */
-            overflow-x: hidden; /* Prevent horizontal scrolling */
-        }
-        header {
-            text-align: center;
-            padding: 3em 0;
-            background-color: #f4e3cf;
-        }
-        header h1 {
-            color: #826a47; /* A warm brown title */
-            font-weight: 600; /* Semi-bold font weight for the header */
-            margin-bottom: 0.5em;
-            font-size: 2.75em; /* Slightly larger heading */
-        }
-        header p {
-            color: #665e57;
-            font-size: 1.2em;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mental Mosaic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4e3cf;
+      color: #333;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-        main {
-            padding: 4em 2em;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-        }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      text-align: center;
+      padding: 1.5em;
+      background-color: #fff9f2;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      border-radius: 16px;
+    }
 
-        section {
-            margin-bottom: 3em;
-        }
+    h1 {
+      color: #826a47;
+      font-size: 2.4em;
+      margin-bottom: 0.4em;
+      font-weight: 600;
+    }
 
-        section h2 {
-            color: #826a47;
-            margin-bottom: 1.2em;
-            font-size: 2.1em;
-            font-weight: 600;
-        }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #555;
+      margin: 0.5em 0;
+    }
 
-        section p {
-            color: #555;
-            font-size: 1.15em;
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 2em;
-        }
-
-        .image-container img {
-            border-radius: 12px;
-            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-            max-width: 90%;
-            height: auto;
-        }
-
-        footer {
-            text-align: center;
-            padding: 3em 2em;
-            background-color: #f4e3cf;
-            color: #826a47;
-            margin-top: 5em;
-            font-size: 1em;
-        }
-
-        /* Fancy hover effect on the image */
-        .image-container img:hover {
-            transform: scale(1.05);
-            transition: all 0.3s ease-in-out;
-        }
-
-        /* Style the footer for better readability */
-        footer p {
-            margin: 0;
-            font-size: 1.1em;
-        }
-
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Mental Mosaic</h1>
-        <p>Crafting clarity, piece by piece — exploring the beauty and complexity of the human mind.</p>
-    </header>
-
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>We are a community dedicated to mental wellness. Our goal is to help individuals gain mental clarity and balance, much like a mosaic—a collection of different pieces coming together to form something beautiful, strong, and meaningful.</p>
-        </section>
-        <section>
-            <h2>Our Mission</h2>
-            <p>Our mission is to empower individuals on their journey to mental clarity and peace. We advocate for a holistic approach to mental health, focusing on the mind, body, and spirit, and bringing together different tools to create a beautiful mental mosaic.</p>
-        </section>
-        <section>
-            <h2>The Beauty of a Mosaic</h2>
-            <p>A mosaic is made up of small, varied pieces—each unique on its own but coming together to form a stunning and cohesive whole. Similarly, human thoughts and emotions are pieces that, when understood and integrated, contribute to a harmonious mental state. Our site explores how these pieces can be shaped, organized, and nurtured to foster a better understanding of ourselves.</p>
-        </section>
-        <section>
-            <h2>Get Involved</h2>
-            <p>Join our growing community and discover various ways to engage with us. Whether through our workshops, support groups, or mental wellness resources, we invite you to become part of the journey towards mental clarity.</p>
-        </section>
-
-
-	<div class="image-container">
-    		<img src="https://images.unsplash.com/photo-1563260054-876a057f5c14?auto=format&fit=crop&w=1470&q=80" alt="A beautiful mosaic" width="800">
-	</div>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Mental Mosaic. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+    img {
+      margin-top: 1.5em;
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px
